@@ -1,0 +1,28 @@
+{% extends 'AppBundle:layouts:layout.html.twig' %}
+   
+{% block javaScripts %}
+
+        {{parent()}}
+    <script src="{{ asset('assets/js/custom/nick-test.js')}}"></script>	
+{% endblock %}
+
+{% block content %}
+
+
+<!-- 	 <div class="box-form col-lg-2">
+</div> -->
+
+    <div class="box-form col-lg-8">
+    	<h2>Registrarse<h2>
+    		<hr>
+    		{{form_start(form,{'action':'','method':'POST'})}}
+    		
+    		{{form_errors(form)}}
+    		{{form_end(form)}}
+
+    </div>
+
+ <!--    <div class="box-form col-lg-2">
+ 	 </div> -->
+{% endblock %}
+

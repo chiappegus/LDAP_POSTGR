@@ -1,0 +1,11 @@
+INSERT INTO `users` (`id`, `role`, `email`, `name`, `surname`, 
+	`password`, `nick`, `bio`, `active`, `image`) 
+VALUES (NULL, 'ROLE_ADMIN', 'admin@admin.com', 'Gustavo', 
+	'Chiappe', 'pass', 'admin', NULL, '1', NULL);
+
+
+
+
+
+
+

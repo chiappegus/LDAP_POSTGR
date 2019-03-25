@@ -1,0 +1,32 @@
+# backend_homepage:
+#     path:     /
+#     defaults: { _controller: backendBundle:Default:index }
+
+login:
+    path: /login
+    defaults: { _controller: AppBundle:User:login }
+    
+
+login_check:
+  path: /login_check
+
+loginLDAP:
+    path: /loginLDAP
+    defaults: { _controller: AppBundle:User:login }
+
+
+login_checkLDAP:
+  path: /login_checkLDAP
+
+logout:
+  path: /logout  
+
+register:
+    path:     /register
+    defaults: { _controller: AppBundle:User:register }
+
+user_nick_test:
+    path:     /nick-test
+    defaults: { _controller: AppBundle:User:nickTest }
+    methods: [POST]
+
